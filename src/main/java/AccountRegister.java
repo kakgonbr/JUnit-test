@@ -9,7 +9,7 @@ public class AccountRegister {
     }
 
     public static boolean password(String password) {
-        return password.trim().length() > 6;
+        return password == null ? false : password.trim().length() > 6 && password.trim().length() < 32;
     }
 
     /**
